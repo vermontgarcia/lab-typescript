@@ -3,7 +3,7 @@ class ToDoItem {
         this.taskTitle = taskTitle;
         this.taskStatus = false;
         this.updatedAt = new Date();
-        this.toggleStatus = this.toggleStatus;
+        this.toggleStatus;
     }
     toggleStatus() {
         if (this.taskStatus === true) {
