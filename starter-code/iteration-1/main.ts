@@ -6,6 +6,8 @@ let myArray: Array<string> = [];
 // 2. Create a function to add a task in to the array, call it `addTask`, the function has to accept a string and don't have to return anything.
 
 function addTask(value: string){
+  console.log('=========== NEW TASK ===========');
+  console.log('Task "'+ value + '" inserted in the list')
   return myArray.push(value);
 }
 
@@ -23,6 +25,8 @@ function deleteTask(value: string){
 
   let n = myArray.indexOf(value);
   if (n > -1){
+    console.log('=========== TASK REMOVED ===========');
+    console.log('Task "'+ value + '" removed from the list')
     myArray.splice(n, 1);
     return myArray.length 
   }

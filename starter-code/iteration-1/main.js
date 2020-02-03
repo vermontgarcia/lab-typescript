@@ -1,5 +1,7 @@
 let myArray = [];
 function addTask(value) {
+    console.log('=========== NEW TASK ===========');
+    console.log('Task "' + value + '" inserted in the list');
     return myArray.push(value);
 }
 function listAllTasks() {
@@ -10,6 +12,8 @@ function listAllTasks() {
 function deleteTask(value) {
     let n = myArray.indexOf(value);
     if (n > -1) {
+        console.log('=========== TASK REMOVED ===========');
+        console.log('Task "' + value + '" removed from the list');
         myArray.splice(n, 1);
         return myArray.length;
     }
