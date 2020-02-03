@@ -7,7 +7,10 @@ import {ToDoInterface} from "./todoInterface"
 class ToDo implements ToDoInterface{
 
   tasks = [];
+
   addTask(task){
+    console.log('=========== NEW TASK ===========');
+    console.log('Task "'+ task + '" inserted in the list')
     return this.tasks.push(task);
   }
 
@@ -20,7 +23,8 @@ class ToDo implements ToDoInterface{
 
   deleteTask(task){
     this.tasks.splice(this.tasks.indexOf(task),1)
-    console.log('Deleting task: ' + task)
+    console.log('=========== TASK REMOVED ===========');
+    console.log('Task "'+ task + '" removed from the list')
     return this.tasks.length
 
   }

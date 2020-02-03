@@ -8,5 +8,5 @@ export interface ToDoInterface {
   tasks: Array<string>;
   addTask(string): number;
   listAllTasks(): void;
-  deleteTask(string): void;
+  deleteTask(string): number;
 }
